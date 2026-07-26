@@ -10,7 +10,7 @@ https://www.tinkercad.com/things/0Te0Y6URPXv-grand-sango/editel?returnTo=https%3
 ## Overview
 This project programs 4 servo motors using an Arduino UNO to perform two sequential actions:
 
-1. **Sweep Motion** – All 4 servos rotate back and forth (0°–180°) for exactly **2 seconds**, similar to the Arduino `Sweep` example.
+1. **Sweep Motion** – All 4 servos rotate back and forth (0°–180°) for exactly **2 seconds**.
 2. **Hold Position** – After the 2 seconds, all servos stop and hold steady at **90 degrees**.
 
 ## Components Used
@@ -33,8 +33,7 @@ The code uses the `millis()` function instead of `delay()` to track elapsed time
 - While elapsed time is **less than 2000 ms**, the servos perform a sweep motion (0° → 180° → 0°).
 - Once **2000 ms** have passed, all servos are set to hold at **90°** continuously.
 
-## Code
-See `servo_control.ino` for the full Arduino sketch.
+
 
 ## Simulation
 The circuit and code were built and tested using **Tinkercad Circuits**.
